@@ -1,0 +1,16 @@
+--------------------------- configuration Git -------------------------------------------------
+$ git config --global user.name "John Doe"   #Définir le nom d'utilisateur
+$ git config --global user.email johndoe@example.com #Définir l'adresse mail de l'utilisateur
+$ git config --global color.diff auto #Configurez les couleurs
+$ git config --global color.status auto #Configurez les couleurs
+$ git config --global color.branch auto #Configurez les couleurs
+$ git config --global core.editor "C:\Program Files (x86)\Notepad++\notepad++.exe" #éditeur 
+$ git config --global merge.tool vimdiff # Vimdiff comme outil de merge
+
+------------------------ comandes git versionning --------------------------------------
+git init #définier un dossier comme working directory (il faut être dans le dossier pour exécuter la commande)
+$ git add index.html  # index(selectionner le fichier) - stage
+$ git add styles.css   # index(selectionner le fichier) - stage
+git commit -m "Ajout des fichiers html et css de base" # créer une version des fichiers indexés(selectionné) - repository
+git status [-s] # voir l'état du working directory (fichiers/dossiers suivi,modifiés,non modifiés, indexés)
+git diff # affiche ce qui a été modifié dans les fichiers suivis modifiés et non indexé.
